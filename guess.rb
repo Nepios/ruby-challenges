@@ -2,8 +2,8 @@ guesses = 1
 continue = true
 secret_number = rand(1...100)
 
+puts 'Guess a number between 1 and 100.'
 while continue do
-  puts 'Guess a number between 1 and 100.'
   guess = gets.chomp.to_i
   if guess > secret_number
     puts "The number is lower than #{guess}."
